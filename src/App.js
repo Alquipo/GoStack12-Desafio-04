@@ -59,13 +59,21 @@ export default function App() {
 
 
               <View style={styles.likesContainer}>
-
-                <Text
-                  style={styles.likeText}
-                  testID={`repository-likes-${repository.id}`}
-                >
-                  {repository.likes} curtidas
+                {repository.likes === 0 ?
+                  <Text
+                    style={styles.likeText}
+                    testID={`repository-likes-${repository.id}`}
+                  >
+                    Voce não tem nenhuma curtida ainda
                   </Text>
+                  :
+                  <Text
+                    style={styles.likeText}
+                    testID={`repository-likes-${repository.id}`}
+                  >
+                    {repository.likes} curtidas
+                  </Text>
+                }
 
               </View>
 
