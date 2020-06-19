@@ -64,23 +64,23 @@ export default function App() {
                     style={styles.likeText}
                     testID={`repository-likes-${repository.id}`}
                   >
-                    Voce não tem nenhuma curtida ainda
+                    Seu repositório não teve nenhuma curtida 😊
                   </Text>
                   :
                   <Text
                     style={styles.likeText}
                     testID={`repository-likes-${repository.id}`}
                   >
-                    {repository.likes} curtidas
+                    {repository.likes} 👍
                   </Text>
                 }
 
               </View>
 
               <TouchableOpacity
+                activeOpacity={0.8}
                 style={styles.button}
                 onPress={() => handleLikeRepository(repository.id)}
-                // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
                 testID={`like-button-${repository.id}`}
               >
                 <Text style={styles.buttonText}>Curtir</Text>
@@ -97,17 +97,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#7159c1",
+    backgroundColor: "hsla(220, 13%, 95%, 0.932)",
   },
   repositoryContainer: {
     marginBottom: 15,
     marginHorizontal: 15,
     backgroundColor: "#fff",
     padding: 20,
-    marginTop: 10
+    marginTop: 10,
+    borderRadius: 15,
+    elevation: 10
   },
   repository: {
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: "bold",
   },
   techsContainer: {
@@ -122,6 +124,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 5,
     color: "#fff",
+    borderRadius: 25,
+
   },
   likesContainer: {
     marginTop: 15,
