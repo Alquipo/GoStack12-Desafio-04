@@ -71,10 +71,7 @@ export default function App() {
 
   return (
     <>
-      <StatusBar
-        barStyle="dark-content"
-        backgroundColor="hsla(220, 13%, 95%, 0.932)"
-      />
+      <StatusBar barStyle="dark-content" backgroundColor="#F1F2F4" />
 
       <SafeAreaView style={styles.container}>
         <FlatList
@@ -179,7 +176,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "hsla(220, 13%, 95%, 0.932)",
+    backgroundColor: "#F1F2F4",
   },
   repositoryContainer: {
     marginBottom: 15,
