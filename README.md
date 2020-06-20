@@ -49,16 +49,16 @@ Quarto desafio foi desenvolver um aplicativo Mobile onde mostra os dados dos rep
 
 ## 🎨 Layout
 
-### Original
+<h3 align="center">
+ Original vs Update  
+</h3>
 
 <h4 align="center">
-  <img alt="Original" title="Original" src=".github/originalVersion.gif" width="500px" />
-</h4>
 
-### Versão Final
+  <img  style="padding-right: 5px" alt="Original" title="Original" src=".github/originalVersion.gif" width="250px" />
 
-<h4 align="center">
-  <img alt="Update" title="Update" src=".github/updateVersion.gif" width="500px" />
+  <img alt="Update" title="Update" src=".github/updateVersion.gif" width="250px" />
+
 </h4>
 
 ## 🔨 Tecnologias:
