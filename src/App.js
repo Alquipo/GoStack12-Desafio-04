@@ -114,15 +114,11 @@ export default function App() {
                           size={30}
                         />
                       }
-                      title="  Github"
+                      title="  GitHub"
                       onPress={() => Linking.openURL(repository.url)}
                       raised
-                      ViewComponent={LinearGradient} // Don't forget this!
-                      linearGradientProps={{
-                        colors: ['black', 'white'],
-                        useAngle: true,
-                        angle: 0,
-                      }}
+                      buttonStyle={{ backgroundColor: '#f5f5f5' }}
+                      titleStyle={{ color: 'black', fontSize: 25 }}
                     />
 
                   </>
@@ -157,7 +153,6 @@ export default function App() {
               </View>
 
               <View style={styles.buttonContainer}>
-
                 <TouchableOpacity
                   activeOpacity={0.7}
                   style={styles.button}
@@ -180,7 +175,6 @@ export default function App() {
           )}
         />
 
-
         <TouchableOpacity
           activeOpacity={0.8}
           style={styles.buttonAdd}
@@ -188,7 +182,6 @@ export default function App() {
         >
           <Text style={[styles.buttonTextAdd, styles.buttonColorAdd]}>Adicionar</Text>
         </TouchableOpacity>
-
 
       </SafeAreaView>
 
@@ -246,6 +239,7 @@ const styles = StyleSheet.create({
     marginBottom: 8
   },
   buttonContainer: {
+    marginLeft: 6,
     flexDirection: "row",
 
   },
@@ -255,7 +249,7 @@ const styles = StyleSheet.create({
 
   },
   buttonText: {
-    fontSize: 14,
+    fontSize: 15,
     fontWeight: "bold",
     marginRight: 10,
     color: "#fff",
@@ -280,8 +274,6 @@ const styles = StyleSheet.create({
 
   buttonAdd: {
     padding: 5,
-    backgroundColor: 'transparent',
-    borderRadius: 10,
   },
 
   buttonTextAdd: {
