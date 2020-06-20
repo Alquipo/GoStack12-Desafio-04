@@ -15,18 +15,20 @@
 </a>
 
 <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
+
 </p>
 
 <p align="center">
-<a href="https://nodejs.org/en/" rel="nofollow">
-    <img src="https://camo.githubusercontent.com/aed2c3876a97dab0bdadd00ece0a12f9291d1dab/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d4e6f6465266d6573736167653d4a5326636f6c6f723d626c75653f7374796c653d706c6173746963266c6f676f3d4e6f64652e6a73" alt="NodeJS" data-canonical-src="https://img.shields.io/static/v1?label=Node&amp;message=JS&amp;color=blue?style=plastic&amp;logo=Node.js" style="max-width:100%;">
+
+  <a href="https://nodejs.org/en/">
+    <img alt="NodeJS" src="https://img.shields.io/static/v1?color=brightgreen&label=Node&message=JS&?style=plastic&logo=Node.js">
   </a>
 
-   <a href="https://reactnative.dev/" rel="nofollow">
-    <img src="https://camo.githubusercontent.com/099a86b814c13bf9dbb1ebc651bd48740ba1de1a/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d5265616374266d6573736167653d4e617469766526636f6c6f723d626c75653f7374796c653d706c6173746963266c6f676f3d5265616374" alt="React-Native" data-canonical-src="https://img.shields.io/static/v1?label=React&amp;message=Native&amp;color=blue?style=plastic&amp;logo=React" style="max-width:100%;">
+  <a href="https://reactjs.org/">
+    <img alt="ReactNative" src="https://img.shields.io/static/v1?color=blue&label=React&message=Native&?style=plastic&logo=React">
   </a>
-
 </p>
+
 <h2 align="center">
   Desafio 04: Conceitos do React Native
 </h2>
@@ -35,8 +37,33 @@
 
 Quarto desafio foi desenvolver um aplicativo Mobile onde mostra os dados dos repositórios da `API` desenvolvida no [Desafio 2][desafio2]. Foi adicionado no aplicativo Mobile a listagem dos repositórios e a função da de curtir os repositórios.
 
+## 🎉 Melhorias
+
+    - Convertido todo o Projeto para TypeScript
+    - Refeito a interface do projeto para ficar um pouco melhor (não sou Designer)😊;
+    - Adicionado a visualização da url, techs e curtidas;
+    - Adicionado um botão para Criar Repositórios;
+    - Adicionado um botão para Remover Repositórios;
+    - Adicionado um botão para Ir para o Repositórios;
+    - Efetuado Validação no texto para quando não tem curtidas;
+
+## 🎨 Layout
+
+### Original
+
+<h4 align="center">
+  <img alt="Original" title="Original" src=".github/originalVersion.gif" width="500px" />
+</h4>
+
+### Versão Final
+
+<h4 align="center">
+  <img alt="Update" title="Update" src=".github/updateVersion.gif" width="500px" />
+</h4>
+
 ## 🔨 Tecnologias:
 
+- [TypeScript][typescript]
 - [React Native][reactjs]
 - [Axios][axios]
 
@@ -106,3 +133,4 @@ Feito com ❤️ por Alquipo Neto 👋🏽 [Entre em contato!](https://www.linke
 [rs]: https://rocketseat.com.br
 [license]: https://opensource.org/licenses/MIT
 [desafio2]: https://github.com/Alquipo/GoStack12-desafio-02
+[typescript]: https://www.typescriptlang.org/
