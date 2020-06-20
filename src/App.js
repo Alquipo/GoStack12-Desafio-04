@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import api from './services/api'
+import { Button } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import LinearGradient from 'react-native-linear-gradient';
+
 import {
   SafeAreaView,
   View,
@@ -95,12 +99,34 @@ export default function App() {
 
               <View style={styles.likesContainer}>
                 {repository.likes === 0 ?
-                  <Text
-                    style={styles.likeText}
-                    testID={`repository-likes-${repository.id}`}
-                  >
-                    Seu repositório não teve nenhuma curtida 😊
-                  </Text>
+                  <>
+                    <Text
+                      style={styles.likeText}
+                      testID={`repository-likes-${repository.id}`}
+                    >
+                      Seu repositório não teve nenhuma curtida 😊
+                    </Text>
+
+                    <Button
+                      icon={
+                        <Icon
+                          name="github"
+                          size={30}
+                        />
+                      }
+                      title="  Github"
+                      onPress={() => Linking.openURL(repository.url)}
+                      raised
+                      ViewComponent={LinearGradient} // Don't forget this!
+                      linearGradientProps={{
+                        colors: ['black', 'white'],
+                        useAngle: true,
+                        angle: 0,
+                      }}
+                    />
+
+                  </>
+
                   :
                   <>
                     <Text
@@ -110,14 +136,20 @@ export default function App() {
                       {repository.likes} 👍
 
                   </Text>
-
-                    <TouchableOpacity
-                      activeOpacity={0.8}
-                      style={styles.button}
+                    <Button
+                      icon={
+                        <Icon
+                          name="github"
+                          size={30}
+                        />
+                      }
+                      title="  GitHub"
                       onPress={() => Linking.openURL(repository.url)}
-                    >
-                      <Text style={[styles.buttonText, styles.buttonColorAdd]} >GitHub</Text>
-                    </TouchableOpacity>
+                      raised
+                      buttonStyle={{ backgroundColor: '#f5f5f5' }}
+                      titleStyle={{ color: 'black', fontSize: 25 }}
+                    />
+
                   </>
                 }
 
@@ -125,8 +157,9 @@ export default function App() {
               </View>
 
               <View style={styles.buttonContainer}>
+
                 <TouchableOpacity
-                  activeOpacity={0.8}
+                  activeOpacity={0.7}
                   style={styles.button}
                   onPress={() => handleLikeRepository(repository.id)}
                   testID={`like-button-${repository.id}`}
@@ -135,7 +168,7 @@ export default function App() {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                  activeOpacity={0.8}
+                  activeOpacity={0.7}
                   style={styles.button}
                   onPress={() => handleRemoveRepository(repository.id)}
                   testID={`remove-button-${repository.id}`}
@@ -146,16 +179,17 @@ export default function App() {
             </View>
           )}
         />
-        <View>
-          <TouchableOpacity
-            activeOpacity={0.8}
-            style={styles.buttonAdd}
-            onPress={handleAddRepository}
-          >
-            <Text style={[styles.buttonTextAdd, styles.buttonColorAdd]}>Adicionar</Text>
-          </TouchableOpacity>
 
-        </View>
+
+        <TouchableOpacity
+          activeOpacity={0.8}
+          style={styles.buttonAdd}
+          onPress={handleAddRepository}
+        >
+          <Text style={[styles.buttonTextAdd, styles.buttonColorAdd]}>Adicionar</Text>
+        </TouchableOpacity>
+
+
       </SafeAreaView>
 
     </>
@@ -163,6 +197,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
     backgroundColor: "hsla(220, 13%, 95%, 0.932)",
@@ -201,15 +236,14 @@ const styles = StyleSheet.create({
   likesContainer: {
     marginTop: 15,
     justifyContent: "space-between",
-    flexDirection: "row",
+    flexDirection: "column",
 
   },
   likeText: {
     fontSize: 20,
     fontWeight: "bold",
-    marginRight: 10,
-    marginTop: 17,
-    textAlign: "center"
+    textAlign: "center",
+    marginBottom: 8
   },
   buttonContainer: {
     flexDirection: "row",
@@ -243,10 +277,13 @@ const styles = StyleSheet.create({
 
 
   },
+
   buttonAdd: {
     padding: 5,
-    // backgroundColor: 'none'
+    backgroundColor: 'transparent',
+    borderRadius: 10,
   },
+
   buttonTextAdd: {
     fontSize: 20,
     fontWeight: "bold",
@@ -254,6 +291,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     textAlign: "center",
+    backgroundColor: 'transparent',
 
   },
 });
