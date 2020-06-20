@@ -46,6 +46,11 @@ Quarto desafio foi desenvolver um aplicativo Mobile onde mostra os dados dos rep
     - Adicionado um botão para Remover Repositórios;
     - Adicionado um botão para Ir para o Repositórios;
     - Efetuado Validação no texto para quando não tem curtidas;
+    - Adicionado ícone no APP
+    - Adicionado Splash Screen no APP
+    - Alterado nome do App
+    - Adicionado URL dinâmica no botão GitHub
+    - Melhorado o TouchableOpacity do botão GitHub
 
 ## 🎨 Layout
 
@@ -57,7 +62,7 @@ Quarto desafio foi desenvolver um aplicativo Mobile onde mostra os dados dos rep
 
   <img  style="padding-right: 15px" alt="Original" title="Original" src=".github/originalVersion.gif" width="250px" />
 
-  <img alt="Update" title="Update" src=".github/updateVersion.gif" width="250px" />
+  <img alt="Update" title="Update" src=".github/updateVersion2.0.gif" width="250px" />
 
 </h4>
 
