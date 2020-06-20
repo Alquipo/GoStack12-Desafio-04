@@ -55,7 +55,7 @@ Quarto desafio foi desenvolver um aplicativo Mobile onde mostra os dados dos rep
 
 <h4 align="center">
 
-  <img  style="padding-right: 5px" alt="Original" title="Original" src=".github/originalVersion.gif" width="250px" />
+  <img  style="padding-right: 15px" alt="Original" title="Original" src=".github/originalVersion.gif" width="250px" />
 
   <img alt="Update" title="Update" src=".github/updateVersion.gif" width="250px" />
 
