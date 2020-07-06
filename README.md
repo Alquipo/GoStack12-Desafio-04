@@ -24,7 +24,7 @@
     <img alt="NodeJS" src="https://img.shields.io/static/v1?color=brightgreen&label=Node&message=JS&?style=plastic&logo=Node.js">
   </a>
 
-  <a href="https://reactjs.org/">
+  <a href="https://reactnative.dev/">
     <img alt="ReactNative" src="https://img.shields.io/static/v1?color=blue&label=React&message=Native&?style=plastic&logo=React">
   </a>
 </p>
